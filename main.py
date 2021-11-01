@@ -11,7 +11,7 @@ API_KEY_SENDGRID = 'DONT SHARE THIS'
 with file:
 
     # Request page
-    result = requests.get('https://www.mobile.bg/m1olks', headers={'User-Agent': 'Chrome'})
+    result = requests.get('https://www.mobile.bg/m1va99', headers={'User-Agent': 'Chrome'})
 
     # If page accessed
     if result.status_code == 200:
