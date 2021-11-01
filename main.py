@@ -2,10 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
-import base64
-
-def get_as_base64(url):
-    return base64.b64encode(requests.get(url).content)
 
 # Opens file with Read Write
 file = open('cars.csv', 'r+', newline ='', encoding="utf-8")
@@ -82,8 +78,8 @@ with file:
 
 
             message = Mail(
-                from_email = 'n.kalaidjiev@gmail.com',
-                to_emails = 'n.kalaidjiev@gmail.com',
+                from_email = '###',
+                to_emails = '###',
                 subject = 'MOBILE.BG | New Honda Civic Found!',
                 html_content = email_html)
             try:
